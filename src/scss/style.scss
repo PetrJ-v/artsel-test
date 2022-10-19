@@ -113,7 +113,7 @@ a:focus {
 	}
 }
 .btn-border-radius {
-	border-radius: 1.8vw;
+	border-radius: 2.5em;
 }
 .container {
 	max-width: 1680px;
@@ -183,13 +183,14 @@ header {
 			right: calc(-56 / 1905 * 100vw);
 		}
 	}
-	&:hover {
-		text-decoration: none;
-	}
 	@include under-break($breakMedium) {
 		min-width: calc(100% - 28px);
 		max-width: calc(100% - 28px);
+		font-size: clamp(25px, 8vw, 35px);
 		order: 1;
+	}
+	&:hover {
+		text-decoration: none;
 	}
 }
 .logo-description {
@@ -328,7 +329,11 @@ header {
 	@include under-break($breakMedium) {
 		order: 5;
 		margin-top: 2.6vw;
+		padding: 1vw 3.8vw;
 		font-size: 16px;
+	}
+	@include under-break($breakSmall){
+		padding: 1.3vw 3.8vw;
 	}
 }
 $top-distance: 4vw;
@@ -399,9 +404,11 @@ $top-distance: 4vw;
 	padding: 0.73vw 4.4vw;
 	@include under-break($breakMedium) {
 		margin-top: 4vw;
+		padding: 1.19vw 4.4vw;
 	}
 	@include under-break($breakSmall) {
 		margin-top: 6vw;
+		padding: calc(1.54vw + 2px) 9vw;
 	}
 }
 .services__right {
