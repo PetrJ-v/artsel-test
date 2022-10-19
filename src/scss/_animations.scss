@@ -1,0 +1,39 @@
+/***********************************************************************************************************************
+**	ANIMATIONS
+***********************************************************************************************************************/
+
+@keyframes transformTo {
+	from {
+		transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg);
+	}
+	to {
+		transform: none;
+	}
+}
+@keyframes transformOut {
+	from {
+		transform: perspective(750px) translate3d(0px, 0px, 250px) rotateX(27deg);
+	}
+	to {
+		transform: none;
+	}
+}
+@keyframes image-ticker {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+@keyframes scale {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
