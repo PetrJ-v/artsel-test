@@ -1,5 +1,6 @@
 # Тестовое задание от Artsel
 
+Node version v16.18.0
 Предпросмотр верстки
 https://webion.com.ua/artsel/
 
